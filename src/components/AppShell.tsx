@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useLang, LangToggle } from "../lib/i18n";
 import { LotusIcon } from "./SpiritualArt";
+import { InstallButton } from "./InstallPWA";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const { lang } = useLang();
@@ -52,6 +53,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           )}
 
           <div className="flex items-center gap-2">
+            {/* Install button — only shows when PWA prompt is available */}
+            <InstallButton />
             <LangToggle />
             <Link
               to="/library"

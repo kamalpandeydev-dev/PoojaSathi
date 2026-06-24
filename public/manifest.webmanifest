@@ -1,27 +1,77 @@
 {
-  "name": "PoojaSathi — Pooja Collaboration",
-  "short_name": "PoojaSathi",
-  "description": "A collaborative workspace where a Pandit and a Yajmaan manage the complete lifecycle of a pooja together.",
-  "lang": "en",
+  "name": "पूजासाथी — PoojaSathi",
+  "short_name": "पूजासाथी",
+  "description": "पूजा बुक करें · सामग्री सूची पाएं · तैयारी ट्रैक करें। Book a pooja, receive samagri checklist from Pandit, and track preparation together.",
+  "lang": "hi",
+  "dir": "ltr",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "portrait-primary",
   "background_color": "#fdfbf7",
   "theme_color": "#ff7d0a",
   "categories": ["lifestyle", "productivity", "utilities"],
+  "id": "poojasathi-app",
   "icons": [
     {
       "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
-  ]
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "पूजासाथी होम — यजमान और पंडित रोल चुनें"
+    },
+    {
+      "src": "/screenshots/dashboard-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "PoojaSathi Dashboard — Pandit booking & samagri management"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "पूजा बुक करें",
+      "short_name": "बुक करें",
+      "description": "नई पूजा बुक करें",
+      "url": "/yajmaan/book",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "पंडित डैशबोर्ड",
+      "short_name": "पंडित",
+      "description": "पंडित जी का डैशबोर्ड",
+      "url": "/pandit",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
 }
+  
